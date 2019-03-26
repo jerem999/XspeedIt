@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>XspeedIt test</title>
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1">
+</head>
+<body>
+    <form action="/" method="POST">
+        Articles : 
+        <input type="text" name="article" required>
+        <button type="submit">Envoyer</button>
+    </form><br/>
+    <%if (article > 0) { %>
+        <li>Articles : <%= article %></li>
+        <li>Robot actuel : <%= robotNonOptimise %> ===> <%= nbBoxNonOptimise %> carton<%if (nbBoxNonOptimise > 1) { %>s<% } %> utilisé<%if (nbBoxNonOptimise > 1) { %>s<% } %></li> 
+        <li>Robot optimisé : <%= robotOptimise %> ===> <%= nbBoxOptimise %> carton<%if (nbBoxOptimise > 1) { %>s<% } %> utilisé<%if (nbBoxOptimise > 1) { %>s<% } %></li>
+    <% } %>
+</body>
+</html>

@@ -1,0 +1,18 @@
+{
+    "name": "XspeedIt",
+    "version": "0.1.0",
+    "main": "app.js",
+    "scripts": {
+        "start": "nodemon app.js"
+    },
+    "dependencies": {
+        "express": "~4.16.4",
+        "ejs": "~2.6.1",
+        "body-parser": "~1.18.3"
+    },
+    "author": "Jérémy BOISDRON",
+    "description": "Optimisation Import/Export",
+    "devDependencies": {
+        "jest": "^24.5.0"
+    }
+}
