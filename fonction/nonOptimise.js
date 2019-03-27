@@ -1,8 +1,8 @@
-exports.nonOptimise = function(ArticleInt){
+exports.nonOptimise = function(articleInt){
 	let nbArticleBox = 0
     let i = 0
-    const listArticleNonOptimise = ArticleInt.map(x => {
-        if (i < ArticleInt.length) {
+    const listArticleNonOptimise = articleInt.map(x => {
+        if (i < articleInt.length) {
             i++
             nbArticleBox = nbArticleBox + x
             if (nbArticleBox > 9) {
@@ -11,13 +11,13 @@ exports.nonOptimise = function(ArticleInt){
                     return '/' + x
                 } else {
                     nbArticleBox = 0
-                    if (i == ArticleInt.length) {
+                    if (i == articleInt.length) {
                         return x
                     } return x + '/'
                 }
             } return x
         }
         return x
-    });
-	return listArticleNonOptimise;
-};
+    })
+	return listArticleNonOptimise.join('')
+}

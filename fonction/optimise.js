@@ -1,7 +1,7 @@
-exports.optimise = function(ArticleInt){
+exports.optimise = function(articleInt){
     const listArticleOptimise = []
     const maxArticle = 10
-    const TriCroissant = ArticleInt.sort(function(a, b){return b-a})
+    const TriCroissant = articleInt.sort(function(a, b){return b-a})
     const tailleMax = TriCroissant.length
     while (TriCroissant.length > 0) {
         let articles = TriCroissant.shift()
@@ -18,5 +18,5 @@ exports.optimise = function(ArticleInt){
             }
         })
     }
-    return listArticleOptimise;
-};
+    return listArticleOptimise.join('')
+}
