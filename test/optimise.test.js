@@ -13,3 +13,10 @@ const resultat2 = '82/73'
 test('[7, 8, 3, 2] ==>  82/73', () => {
     expect(optimise.optimise(test2)).toBe(resultat2)
 })
+
+// test 3
+const test3 = [3, 1, 3, 6, 4, 3]
+const resultat3 = '64/3331'
+test('[3, 1, 3, 6, 4, 3] ==>  64/3331', () => {
+    expect(optimise.optimise(test3)).toBe(resultat3)
+})
