@@ -23,6 +23,6 @@ L'ordre des cartons et des articles n'a pas d'importance.
 - git clone du projet
 - aller dans le dossier XspeedIt
 - npm install (installation des packages)
-- npm start (lancement du projet)
+- npm start (lancement du projet : les tests unitaires se lancent au démarrage automatiquement)
 - http://localhost:8080/ (dans le navigateur)
-
+          
